@@ -11,54 +11,93 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<script src="script.js"	type="text/javascript"></script>
 
 </head>
 
 <body>
 	<header>
 		<div>
-				<div class="header-logo">
+			<a href="#" class="header-logo">
 				Konrad Rosiński
-				</div>
-			</div>
+			</a>
+		</div>
+		
 		<nav>
-			<div><a href="#"><i class="demo-icon icon-doc-alt"></i>Projekty</a></div>
-			<div><a href="#"><i class="demo-icon icon-info-circled"></i>Informacje</a></div>
-			<div><a href="#"><i class="demo-icon icon-user"></i> Kontakt</a></div>
+			<div><a href="#projects"><i class="demo-icon icon-doc-alt"></i>Projekty</a></div>
+			<div><a href="#info"><i class="demo-icon icon-info-circled"></i>Informacje</a></div>
+			<div><a href="#contact"><i class="demo-icon icon-user"></i> Kontakt</a></div>
 		</nav>
 	</header>
 	
 	<div class="block">
 		<div class="content">
-		<h2>Czym się zajmuję ?</h2>
-		<p>Lorem ipsum dolor sit amet, 
-		consectetur adipiscing elit.
-		Mauris sit amet justo lacinia, 
-		varius nisi sed, sollicitudin magna.
-		Ut aliquam arcu quis ipsum ullamcorper,
-		a laoreet orci porta. Suspendisse a lectus
-		sagittis elit ultrices semper vulputate et tortor.
-		Mauris consequat, est a ultricies lacinia, 
-		ante nibh eleifend nisl.</p>
-		<a class="scroll-button" href="#2">
-		<i class="demo-icon icon-down-open"></i>
-		</a>
+			<h2>Czym się zajmuję ?</h2>
+			<p>Projektowanie i tworzenie stron internetowych.</p>
+			<a class="scroll-button" href="#">
+				<i class="demo-icon icon-right-open"></i>
+			</a>
+			<a class="scroll-button" href="#projects">
+				<i class="demo-icon icon-down-open"></i>
+			</a>
+			
 		</div>
-			<div class="ball4">
-			</div>
-			<div class="ball1">
-			</div>
-			<div class="ball2">
-			</div>
-			<div class="ball3">
-			</div>
+		<div class="ball4">
+		</div>
+		<div class="ball1">
+		</div>
+		<div class="ball2">
+		</div>
+		<div class="ball3">
+		</div>
 	</div>
 	
-	<div class="blank-div">
+	<div class="blank-div" id="projects">
 	</div>
 	
-	<div class="block" id="2">
-	<a class="scroll-button" href="#" style="transform:rotate(180deg); margin:auto; margin-top:400px;"> <i class="demo-icon icon-down-open"></i> </a>
+	<div class="block">
+		<div class="content" style="float:right">
+			<h2>Projekty</h2>
+			<p">Jest tu lista moich przykładowych projektów</p>
+			<a class="scroll-button" href="#">
+				<i class="demo-icon icon-left-open"></i>
+			</a>
+			<a class="scroll-button" href="#info">
+				<i class="demo-icon icon-down-open"></i>
+			</a>
+			
+		</div>
+	</div>
+	
+	<div class="blank-div" id="info">
+	</div>
+	
+	<div class="block">
+		<div class="content">
+			<h2>Informacje</h2>
+			<p>Informacje dotyczące projektu CV oraz więcej</p>
+			<a class="scroll-button" href="#projects">
+				<i class="demo-icon icon-right-open"></i>
+			</a>
+			<a class="scroll-button" href="#contact">
+				<i class="demo-icon icon-down-open"></i>
+			</a>
+			
+		</div>
+	</div>
+	
+	<div class="blank-div" id="contact">
+	</div>
+	
+	<div class="block">
+		<div class="content" style="float:right;">
+			<h2>Kontakt</h2>
+			<p>Jak można się ze mną skontaktować</p>
+			<a class="scroll-button" href="#info">
+				<i class="demo-icon icon-left-open"></i>
+			</a>
+			
+		</div>
 	</div>
 </body>
 </html>
