@@ -261,6 +261,13 @@ nav div:focus
 	}
 }
 
+@media (max-width:1500px) and (orientation:landscape)
+{
+	body
+	{
+		overflow-y:scroll;
+	}
+}
 @media (max-width:1000px)
 {
 	body
