@@ -261,13 +261,8 @@ nav div:focus
 	}
 }
 
-@media (max-width:1050px)
+@media (orientation:portrait) (max-width:1050px)
 {
-	body
-	{
-		overflow-y:scroll;
-	}
-	
 	header
 	{
 		height:200px;
