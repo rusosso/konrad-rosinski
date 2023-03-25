@@ -261,7 +261,7 @@ nav div:focus
 	}
 }
 
-@media (orientation:portrait),(max-width:500px)
+@media (max-width:1000px)
 {
 	body
 	{
@@ -287,7 +287,7 @@ nav div:focus
 	
 	.header-logo
 	{
-		height:150px;
+		height:100px;
 		width:300px;
 		font-size:30px;
 	}
