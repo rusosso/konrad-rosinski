@@ -272,15 +272,15 @@ nav div:focus
 {
 	0%
 	{
-		box-shadow:0 0 300px 80px var(--font);
+		box-shadow:0 0 100px 80px var(--font);
 	}
 	50%
 	{
-		box-shadow:0 0 150px 80px var(--font);
+		box-shadow:0 0 50px 80px var(--font);
 	}
 	100%
 	{
-		box-shadow:0 0 300px 80px var(--font);
+		box-shadow:0 0 100px 80px var(--font);
 	}
 }
 
