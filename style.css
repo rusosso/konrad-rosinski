@@ -247,6 +247,9 @@ nav div:focus
 	border-radius:100%;
 	overflow:hidden;
 	box-shadow:0 0 300px 80px var(--font);
+	animation:ball-light-animation-1 6s linear;
+	animation-delay:0ms;
+	animation-iteration-count:infinite;
 }
 
 @keyframes ball-animation-1
@@ -262,6 +265,22 @@ nav div:focus
 	100%
 	{
 		transform:translate(0px, 0px);
+	}
+}
+
+@keyframes ball-light-animation-1
+{
+	0%
+	{
+		box-shadow:0 0 300px 80px var(--font);
+	}
+	50%
+	{
+		box-shadow:0 0 150px 80px var(--font);
+	}
+	100%
+	{
+		box-shadow:0 0 300px 80px var(--font);
 	}
 }
 
