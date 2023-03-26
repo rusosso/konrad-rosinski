@@ -276,7 +276,7 @@ nav div:focus
 	}
 	50%
 	{
-		box-shadow:0 0 150px 80px var(--font);
+		box-shadow:0 0 150px 60px var(--font);
 	}
 	100%
 	{
