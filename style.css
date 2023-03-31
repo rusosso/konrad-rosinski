@@ -651,7 +651,7 @@ nav div:focus
 	}
 	.me_content_ball2
 	{
-		transform:translate(150px, -150px) scale(90%);
+		transform:translate(150px, -150px) scale(90%) rotate(20deg);
 	}
 	.me_content_ball3
 	{
@@ -687,11 +687,11 @@ nav div:focus
 		}
 		80%
 		{
-			transform:translate(150px, -150px);
+			transform:translate(150px, -150px) rotate(20deg);
 		}
 		100%
 		{
-			transform:translate(150px, -150px) scale(90%);
+			transform:translate(150px, -150px) scale(90%) rotate(20deg);
 		}
 	}
 
@@ -719,11 +719,11 @@ nav div:focus
 		}
 		80%
 		{
-			transform:translate(200px, -400px);
+			transform:translate(200px, -400px) rotate(20deg);
 		}
 		100%
 		{
-			transform:translate(200px, -400px) scale(200%);
+			transform:translate(200px, -400px);
 		}
 	}
 	
