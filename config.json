@@ -47,6 +47,12 @@
       "css": "right-open",
       "code": 61446,
       "src": "mfglabs"
+    },
+    {
+      "uid": "5381e124761bc5dbcf32ec5dd86f91d6",
+      "css": "brush",
+      "code": 59394,
+      "src": "typicons"
     }
   ]
 }

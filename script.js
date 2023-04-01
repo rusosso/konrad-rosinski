@@ -1,3 +1,26 @@
+function randomise_color()
+{
+	var font_color_id=Math.floor(Math.random()*5)+1;
+	switch (font_color_id)
+	{
+		case 1:
+		document.querySelector(':root').style.setProperty('--font', '#00ffbb');
+		break;
+		case 2:
+		document.querySelector(':root').style.setProperty('--font', '#00aaff');
+		break;
+		case 3:
+		document.querySelector(':root').style.setProperty('--font', 'orange');
+		break;
+		case 4:
+		document.querySelector(':root').style.setProperty('--font', 'yellow');
+		break;
+		case 5:
+		document.querySelector(':root').style.setProperty('--font', '#bbff00');
+		break;
+	}
+}
+
 
 var IsMeContentActive=false;
 
