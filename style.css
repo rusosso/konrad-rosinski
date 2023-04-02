@@ -4,18 +4,6 @@
 	scroll-behavior: smooth;
 }
 
-@keyframes appear
-{
-	0%
-	{
-		opacity:0%;
-	}
-	100%
-	{
-		opacity:100%;
-	}
-}
-
 :root
 {
 	--bg:#050505;
@@ -137,12 +125,17 @@ nav div:focus
 .content, .me_content_content
 {
 	position:relative;
-	width:40%;
-	height:750px;
-	font-size:1.7vw;
-	padding:10px 50px;
+	width:30%;
+	height:710px;
+	font-size:35px;
+	padding:0px 50px;
 	text-shadow:0 0 15px black;
 	z-index:1;
+}
+
+.content
+{
+	animation:content_me_show 0.9s;
 }
 
 .me_content_content
@@ -154,12 +147,13 @@ nav div:focus
 .scroll-button, .me_content_scroll-button, .me_content_back-button 
 {
 	display:block;
-	width:100%;
+	width:50%;
 	background-color:var(--color-1);
 	border:none;
 	border-radius:15px;
 	margin-top:25px;
 	text-align:center;
+	text-shadow:0 0 15px black;
 	font-size:200px;
 	color:var(--font);
 	transition:all 0.5s;
@@ -167,8 +161,8 @@ nav div:focus
 
 .scroll-button:hover, .me_content_scroll-button:hover, .me_content_back-button:hover
 {
-	box-shadow:0 0 30px 2px rgba(0,0,0,.5);
-	transform:translatey(15px);
+	box-shadow:-10px 0px 20px 20px rgba(0,0,0,.4);
+	transform:translatex(30px);
 	cursor:pointer;
 }
 
@@ -205,8 +199,7 @@ nav div:focus
 
 .ball1
 {
-	animation:ball-animation-1 8s linear;
-	animation-iteration-count:infinite;
+	animation:ball-animation-1 0.7s;
 }
 .me_content_ball1
 {
@@ -249,13 +242,12 @@ nav div:focus
 	border-radius:100px;
 	border-left:30px solid var(--font);
 	filter:blur(50px);
-	transform:rotate(30deg);
+	transform:rotate(10deg);
 }
 
 .ball2
 {
-	animation:ball-animation-1 6s linear;
-	animation-iteration-count:infinite;
+	animation:ball-animation-2 0.7s;
 }
 
 .me_content_ball2
@@ -270,7 +262,7 @@ nav div:focus
 	background-color:var(--color-1);
 	position:absolute;
 	top:200px;
-	left:45%;
+	left:40%;
 	width:300px;
 	height:300px;
 	border-radius:100%;
@@ -280,13 +272,12 @@ nav div:focus
 
 .ball3
 {
-	animation:ball-animation-1 7s linear;
-	animation-iteration-count:infinite;
+	animation:ball-animation-3 0.7s;
 }
 
 .me_content_ball3
 {
-	transform:translate(-220%, -30%) scale(130%) rotate(-10deg);
+	transform:translate(-220%, -30%) scale(130%) rotate(0deg);
 	animation-name:me_content_ball-animation-3;
 	animation-duration:0.7s;
 }
@@ -300,15 +291,16 @@ nav div:focus
 	border-radius:100%;
 	border-left:30px solid var(--font);
 	filter:blur(50px);
-	transform:rotate(190deg);
+	transform:rotate(170deg);
 }
+
 
 .ball4, .me_content_ball4
 {
 	background:var(--font);
 	position:absolute;
-	top:400px;
-	left:65%;
+	top:300px;
+	left:60%;
 	width:10px;
 	height:10px;
 	border-radius:100%;
@@ -318,9 +310,7 @@ nav div:focus
 
 .ball4
 {
-	animation:ball-light-animation-1 6s linear;
-	animation-delay:0ms;
-	animation-iteration-count:infinite;
+	animation:ball-light-animation-1 0.7s;
 }
 
 .me_content_ball4
@@ -331,15 +321,40 @@ nav div:focus
 	animation-duration:0.7s;
 }
 
+@keyframes appear
+{
+	0%
+	{
+		opacity:0%;
+	}
+	100%
+	{
+		opacity:100%;
+	}
+}
+
+@keyframes content_me_show
+{
+	0%
+	{
+		transform:translate(-1000px, 0px) scale(150%);
+	}
+	100%
+	{
+		transform:translate(0px, 0px) scale(100%);
+	}
+	
+}
+
 @keyframes content_me_hide
 {
 	0%
 	{
-		transform:translate(0px, 0px)
+		transform:translate(0px, 0px) scale(100%);
 	}
 	100%
 	{
-		transform:translate(-1000px, 0px)
+		transform:translate(-1000px, 0px) scale(150%);
 	}
 	
 }
@@ -348,15 +363,35 @@ nav div:focus
 {
 	0%
 	{
-		transform:translate(0px,0px);
-	}
-	50%
-	{
-		transform:translate(10px, 30px);
-	}
+		transform:translate(-15%, 0px) rotate(10deg) scale(130%) ;
+	}	
 	100%
 	{
-		transform:translate(0px, 0px);
+		transform:translate(0px,0px);
+	}
+}
+
+@keyframes ball-animation-2
+{
+	0%
+	{
+		transform:translate(-370%, 10%) scale(130%) rotate(90deg);
+	}	
+	100%
+	{
+		transform:translate(0px,0px);
+	}
+}
+
+@keyframes ball-animation-3
+{
+	0%
+	{
+		transform:translate(-220%, -30%) scale(130%) rotate(0deg);
+	}	
+	100%
+	{
+		transform:translate(0px,0px);
 	}
 }
 
@@ -364,15 +399,13 @@ nav div:focus
 {
 	0%
 	{
-		box-shadow:0 0 200px 80px var(--font);
-	}
-	50%
-	{
-		box-shadow:0 0 150px 60px var(--font);
+		transform:translate(-300px, -100px) scale(200%);
+		box-shadow:0 0 300px 40px var(--font);
 	}
 	100%
 	{
-		box-shadow:0 0 200px 80px var(--font);
+		transform:translate(0px,0px);
+		box-shadow:0 0 300px 80px var(--font);
 	}
 }
 
@@ -408,7 +441,7 @@ nav div:focus
 	}
 	100%
 	{
-		transform:translate(-220%, -30%) rotate(-10deg) scale(130%);
+		transform:translate(-220%, -30%) scale(130%) rotate(0deg);
 	}
 }
 
@@ -461,7 +494,8 @@ nav div:focus
 		font-size:25px;
 	}
 	
-	.scroll-button 
+	
+	.scroll-button, .me_content_scroll-button
 	{
 		display:block;
 		width:100%;
@@ -477,117 +511,150 @@ nav div:focus
 	
 	.block, #me_block
 	{
-		height:600px;
+		height:650px;
 		width:100%;
-		margin-top:80px;
+		margin-top:60px;
 	}
 	
+	.content, .me_content_content
+	{
+		font-size:20px;
+	}
 	.ball1, .me_content_ball1
-	{
-		top:5%;
-		left:60%;
-		transform:scale(60%);
-	}
-	
-	.ball1::after , .me_content_ball1::after
-	{
-		transform:rotate(55deg);
-	}
-	
-	.ball2, .me_content_ball2
-	{
-		top:60%;
-		left:80%;
-		transform:scale(60%);
-	}
-	
-	.ball2::after , .me_content_ball2::after
-	{
-		transform:rotate(40deg);
-	}
-	
-	.ball3,.me_content_ball3
-	{
-		top:40%;
-		left:45%;
-		transform:scale(60%);
-	}
-	
-	.ball3::after , .me_content_ball3::after
-	{
-		transform:rotate(110deg);
-	}
-	
-	.ball4, .me_content_ball4
 	{
 		top:30%;
 		left:70%;
-	}
-	
-	@keyframes ball-animation-1
-	{
-		0%
-		{
-			transform:scale(60%);
-		}
-		50%
-		{
-			transform:translate(-5%, 0) scale(60%);
-		}
-		100%
-		{
-			transform:scale(60%);
-		}
+		width:400px;
+		height:400px;
 	}
 
+	.ball1
+	{
+		animation:ball-animation-1 0.7s;
+	}
 	.me_content_ball1
 	{
-		top:5%;
-		left:60%;
-		transform:translate(-5%, 0) scale(60%);
+		transform:translate(-15%, 0px) rotate(10deg) scale(130%) ;
+		animation-name:me_content_ball-animation-1;
+		animation-duration:0.7s;
 	}
-	
+
+
+	.ball1::after, .me_content_ball1::after
+	{
+		width:400px;
+		height:400px;
+		transform:rotate(35deg);
+	}
+	.ball2,.me_content_ball2
+	{
+		top:350px;
+		left:70%;
+		width:100px;
+		height:100px;
+	}
+
+	.ball2::after, .me_content_ball2::after
+	{
+		width:100px;
+		height:100px;
+		transform:rotate(30deg);
+		border-left:10px solid var(--font);
+		filter:blur(20px);
+	}
+
+	.ball2
+	{
+		animation:ball-animation-2 0.7s;
+	}
+
 	.me_content_ball2
 	{
-		top:60%;
-		left:80%;
-		transform:translate(-200%, 0) scale(60%) rotate(60deg);
+		transform:translate(-370%, 10%) scale(130%) rotate(50deg);
+		animation-name:me_content_ball-animation-2;
+		animation-duration:0.7s;
 	}
-	
+
+	.ball3, .me_content_ball3
+	{
+		top:200px;
+		left:40%;
+		width:160px;
+		height:160px;
+	}
+
+	.ball3
+	{
+		animation:ball-animation-3 0.7s;
+	}
+
 	.me_content_ball3
 	{
-		top:40%;
-		left:45%;
-		transform:translate(-120%, -50%) scale(60%) rotate(60deg);
+		transform:translate(-220%, -30%) scale(130%) rotate(-10deg);
+		animation-name:me_content_ball-animation-3;
+		animation-duration:0.7s;
 	}
-	
+
+	.ball3::after, .me_content_ball3::after
+	{
+		width:160px;
+		height:160px;
+		transform:rotate(130deg);
+	}
+
+
+	.ball4, .me_content_ball4
+	{
+		top:150px;
+		left:65%;
+	}
+
+	.ball4
+	{
+		animation:ball-light-animation-1 0.7s;
+	}
+
 	.me_content_ball4
 	{
-		transform:translate(-150px, 0px) scale(200%);
+		transform:translate(-300px, -100px) scale(200%);
 		box-shadow:0 0 300px 40px var(--font);
+		animation-name:me_content_light-ball-animation-1; 
+		animation-duration:0.7s;
 	}
 	
-	@keyframes me_content_ball-animation-1
+	@keyframes ball-animation-2
 	{
 		0%
 		{
-			transform:translate(0, 0) scale(60%);
-		}	
+			transform:translate(-370%, 10%) scale(130%) rotate(50deg);
+		}
 		100%
 		{
-			transform:translate(-5%, 0) scale(60%);
+			transform:translate(0px,0px);
 		}
 	}
-
+	
 	@keyframes me_content_ball-animation-2
 	{
 		0%
 		{
-			transform:translate(0px,0px) scale(60%);
+			transform:translate(0px,0px);
 		}
 		100%
 		{
-			transform:translate(-200%, 0) scale(60%) rotate(60deg);
+			transform:translate(-370%, 10%) scale(130%) rotate(50deg);
+		}
+	}
+	
+	@keyframes ball-animation-3
+	{
+		0%
+		{
+			transform:translate(-220%, -30%) scale(130%) rotate(-10deg);
+		}
+		100%
+		{
+			transform:translate(0px,0px);
 		}
 	}
 
@@ -595,29 +662,13 @@ nav div:focus
 	{
 		0%
 		{
-			transform:translate(0, 0) scale(60%) rotate(0deg);
-		}
-		100%
-		{
-			transform:translate(-120%, -50%) scale(60%) rotate(60deg);
-		}
-	}
-
-	@keyframes me_content_light-ball-animation-1
-	{
-		0%
-		{
 			transform:translate(0px,0px);
-			box-shadow:0 0 300px 80px var(--font);
 		}
 		100%
 		{
-			transform:translate(-150px, 0px) scale(200%);
-			box-shadow:0 0 300px 40px var(--font);
+			transform:translate(-220%, -30%) scale(130%) rotate(-10deg);
 		}
 	}
-	
-	
 	
 }
 
@@ -655,6 +706,11 @@ nav div:focus
 	.header-logo:hover
 	{
 		font-size:25px;
+	}
+	
+	header nav a i
+	{
+		font-size:45px;
 	}
 	
 	
@@ -699,7 +755,7 @@ nav div:focus
 		left:5%;
 	}
 	
-	.ball3::after
+	.ball3::after, .me_content_ball3::after
 	{
 		transform:rotate(110deg);
 	}
@@ -714,17 +770,51 @@ nav div:focus
 	{
 		0%
 		{
-		transform:translate(0px,0px);
-		}
-		50%
-		{
-			transform:translate(30px, 80px);
+			transform:translate(-50px, 100px) rotate(90deg) scale(120%);
 		}
 		100%
 		{
-			transform:translate(0px, 0px);
+			transform:translate(0px,0px);
 		}
 	}
+
+	@keyframes ball-animation-2
+	{
+		0%
+		{
+			transform:translate(150px, -1200px) rotate(-90deg) scale(120%);
+		}
+		100%
+		{
+			transform:translate(0px,0px);
+		}
+	}
+
+	@keyframes ball-animation-3
+	{
+		0%
+		{
+			transform:translate(0px, -400px) rotate(30deg) scale(120%);
+		}
+		100%
+		{
+			transform:translate(0px,0px);
+		}
+	}
+	
+	@keyframes ball-light-animation-1
+{
+	0%
+	{
+		transform:translate(-300px, -100px) scale(200%);
+		box-shadow:0 0 300px 40px var(--font);
+	}
+	100%
+	{
+		transform:translate(0px,0px);
+		box-shadow:0 0 300px 80px var(--font);
+	}
+}
 	
 	.me_content_ball1
 	{
@@ -736,7 +826,7 @@ nav div:focus
 	}
 	.me_content_ball3
 	{
-		transform:translate(0px, -400px)rotate(-40deg) scale(120%);
+		transform:translate(0px, -400px) rotate(30deg) scale(120%);
 	}
 	.me_content_ball4
 	{
@@ -776,7 +866,7 @@ nav div:focus
 		}
 		100%
 		{
-			transform:translate(0px, -400px)rotate(-40deg) scale(120%);
+			transform:translate(0px, -400px) rotate(30deg) scale(120%);
 		}
 	}
 
@@ -795,42 +885,4 @@ nav div:focus
 	}
 	
 	
-}
-
-@media (orientation:landscape) and (max-width:1000px)
-{
-	header
-	{
-		height:70px;
-		justify-content:space-evenly;
-	}
-	
-	header a
-	{
-		font-size:20px;
-	}
-	
-	header a:hover
-	{
-		font-size:18px;
-	}
-	
-	
-	.header-logo
-	{
-		height:50px;
-		width:300px;
-		font-size:20px;
-	}
-	
-	.header-logo:hover
-	{
-		font-size:25px;
-	}
-	.block, #me_block
-	{
-		height:1500px;
-		width:100%;
-		margin-top:100px;
-	}
 }

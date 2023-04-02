@@ -36,7 +36,7 @@ function display_me_content()
 	}
 	else
 	{
-		document.getElementById("me_block").innerHTML="<div class='me_content_content'><h2>Czym się zajmuję ?</h2><p>Projektowanie i tworzenie stron internetowych.</p><a class='me_content_scroll-button'><i class='demo-icon icon-right-open'></i></a><a class='me_content_scroll-button' href='#projects'><i class='demo-icon icon-down-open'></i></a></div><div class='me_content_ball4'></div><div class='me_content_ball1'></div><div class='me_content_ball2'></div><div class='me_content_ball3'></div><button class='me_content_back-button' onclick='location.reload()'><i class='demo-icon icon-left-open'></i></button>";
+		document.getElementById("me_block").innerHTML="<div class='me_content_content'><h2>Czym się zajmuję ?</h2><p>Projektowanie i tworzenie stron internetowych.</p><a class='me_content_scroll-button'><i class='demo-icon icon-right-open'></i></a><a class='me_content_scroll-button' href='#projects'><i class='demo-icon icon-down-open'></i></a></div><div class='me_content_ball4'></div><div class='me_content_ball1'></div><div class='me_content_ball2'></div><div class='me_content_ball3'></div><button class='me_content_back-button' onclick='display_me_content()'><i class='demo-icon icon-left-open'></i></button>";
 		IsMeContentActive=true;
 	}
 }
