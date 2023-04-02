@@ -130,6 +130,7 @@ nav div:focus
 	font-size:35px;
 	padding:0px 50px;
 	text-shadow:0 0 15px black;
+	z-index:1;
 }
 
 .content
