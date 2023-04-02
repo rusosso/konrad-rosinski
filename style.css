@@ -803,10 +803,10 @@ nav div:focus
 	}
 	
 	@keyframes ball-light-animation-1
-{
+	{
 	0%
 	{
-		transform:translate(-300px, -100px) scale(200%);
+		transform:translate(400px, -400px) scale(300%);
 		box-shadow:0 0 300px 40px var(--font);
 	}
 	100%
@@ -814,7 +814,7 @@ nav div:focus
 		transform:translate(0px,0px);
 		box-shadow:0 0 300px 80px var(--font);
 	}
-}
+	}
 	
 	.me_content_ball1
 	{
