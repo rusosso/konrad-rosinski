@@ -6,7 +6,7 @@
 
 :root
 {
-	--bg:#050505;
+	--bg:#101010;
 	--color-1:#151515;
 	--font:#00ffbb;
 }
@@ -112,13 +112,13 @@ nav div:focus
 {
 	overflow:hidden;
 	position:relative;
-	background-color:var(--color-1);
+	background-color:var(--bg);
 	height:780px;
 	width:100%;
 	margin:auto;
 	margin-top:140px;
 	margin-bottom:50px;
-	box-shadow:inset 0 0 10px 1px rgba(0,0,0,.6);
+	box-shadow:inset 0 0 50px 20px rgb(0,0,0);
 	animation:appear 1s linear;
 }
 
@@ -130,7 +130,6 @@ nav div:focus
 	font-size:35px;
 	padding:0px 50px;
 	text-shadow:0 0 15px black;
-	z-index:1;
 }
 
 .content
@@ -148,7 +147,7 @@ nav div:focus
 {
 	display:block;
 	width:50%;
-	background-color:var(--color-1);
+	background-color:var(--bg);
 	border:none;
 	border-radius:15px;
 	margin-top:25px;
@@ -215,10 +214,12 @@ nav div:focus
 	position:absolute;
 	width:700px;
 	height:700px;
-	border-radius:100px;
-	border-left:20px solid var(--font);
-	filter:blur(50px);
+	border-radius:100%;
+	border-left:70px solid var(--font);
+	border-right:140px solid black;
+	filter:blur(120px);
 	transform:rotate(-5deg);
+	box-sizing:border-box;
 }
 .ball2,.me_content_ball2
 {
@@ -239,10 +240,12 @@ nav div:focus
 	position:absolute;
 	width:200px;
 	height:200px;
-	border-radius:100px;
-	border-left:30px solid var(--font);
-	filter:blur(50px);
+	border-radius:100%;
+	border-left:20px solid var(--font);
+	border-right:40px solid black;
+	filter:blur(33px);
 	transform:rotate(10deg);
+	box-sizing:border-box;
 }
 
 .ball2
@@ -290,8 +293,10 @@ nav div:focus
 	height:300px;
 	border-radius:100%;
 	border-left:30px solid var(--font);
+	border-right:60px solid black;
 	filter:blur(50px);
 	transform:rotate(170deg);
+	box-sizing:border-box;
 }
 
 
