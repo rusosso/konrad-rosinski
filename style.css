@@ -750,11 +750,23 @@ nav div:focus
 		top:800px;
 		left:50%;
 	}
+	
+	.ball1::after, .me_content_ball1::after
+	{
+		transform:rotate(10deg);
+	}
+	
 	.ball2, .me_content_ball2
 	{
 		top:1300px;
 		left:50%;
 	}
+	
+	.ball2::after, .me_content_ball2::after
+	{
+		transform:rotate(50deg);
+	}
+	
 	.ball3, .me_content_ball3
 	{
 		top:1100px;
@@ -776,7 +788,7 @@ nav div:focus
 	{
 		0%
 		{
-			transform:translate(-50px, 100px) rotate(90deg) scale(120%);
+			transform:translate(50px, -600px) rotate(15deg) scale(120%);
 		}
 		100%
 		{
@@ -788,7 +800,7 @@ nav div:focus
 	{
 		0%
 		{
-			transform:translate(150px, -1200px) rotate(-90deg) scale(120%);
+			transform:translate(50px, -100px) rotate(20deg) scale(120%);
 		}
 		100%
 		{
@@ -800,7 +812,7 @@ nav div:focus
 	{
 		0%
 		{
-			transform:translate(0px, -400px) rotate(30deg) scale(120%);
+			transform:translate(0px, -400px) rotate(-15deg) scale(120%);
 		}
 		100%
 		{
@@ -812,7 +824,7 @@ nav div:focus
 	{
 	0%
 	{
-		transform:translate(400px, -400px) scale(300%);
+		transform:translate(-100px, -700px) scale(300%);
 		box-shadow:0 0 300px 40px var(--font);
 	}
 	100%
@@ -824,19 +836,19 @@ nav div:focus
 	
 	.me_content_ball1
 	{
-		transform:translate(-50px, 100px) rotate(90deg) scale(120%);
+		transform:translate(50px, -600px) rotate(15deg) scale(120%);
 	}
 	.me_content_ball2
 	{
-		transform:translate(150px, -1200px) rotate(-90deg) scale(120%);
+		transform:translate(50px, -100px) rotate(20deg) scale(120%);
 	}
 	.me_content_ball3
 	{
-		transform:translate(0px, -400px) rotate(30deg) scale(120%);
+		transform:translate(0px, -400px) rotate(-15deg) scale(120%);
 	}
 	.me_content_ball4
 	{
-		transform:translate(400px, -400px) scale(300%);
+		transform:translate(-100px, -700px) scale(300%);
 	}
 	
 	
@@ -848,7 +860,7 @@ nav div:focus
 		}
 		100%
 		{
-			transform:translate(-50px, 100px) rotate(90deg) scale(120%);
+			transform:translate(50px, -600px) rotate(15deg) scale(120%);
 		}
 	}
 
@@ -860,7 +872,7 @@ nav div:focus
 		}
 		100%
 		{
-			transform:translate(150px, -1200px) rotate(-90deg) scale(120%);
+			transform:translate(50px, -100px) rotate(20deg) scale(120%);
 		}
 	}
 
@@ -872,7 +884,7 @@ nav div:focus
 		}
 		100%
 		{
-			transform:translate(0px, -400px) rotate(30deg) scale(120%);
+			transform:translate(0px, -400px) rotate(-15deg) scale(120%);
 		}
 	}
 
@@ -885,7 +897,7 @@ nav div:focus
 		}
 		100%
 		{
-			transform:translate(400px, -400px) scale(300%);
+			transform:translate(-100px, -700px) scale(300%);
 			box-shadow:0 0 300px 40px var(--font);
 		}
 	}
