@@ -282,7 +282,7 @@ nav div:focus
 
 .me_content_ball2::before
 {
-	content:"javascript 5%";
+	content:"javascript 7%";
 	font-size:25px;
 	text-shadow:0px 0px 20px black;
 	position:absolute;
