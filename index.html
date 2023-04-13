@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>test</title>
+	<title>Konrad Rosiński</title>
 	<meta charset="utf8"/>
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="css/fontello.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
 </head>
 
 <body onload="randomise_color()">
-	<header>
+	<header id="header">
 		<div>
 			<a href="#" class="header-logo">
 				Konrad Rosiński
@@ -24,31 +24,33 @@
 		<nav>
 			<div><a href="#projects"><i class="demo-icon icon-doc-alt"></i>Projekty</a></div>
 			<div><a href="#info"><i class="demo-icon icon-info-circled"></i>Informacje</a></div>
-			<div><a href="#contact"><i class="demo-icon icon-user"></i> Kontakt</a></div>
+			<div><a href="#contact"><i class="demo-icon icon-user"></i>Kontakt</a></div>
+			<div onclick="randomise_color()"><a><i class="demo-icon icon-brush"></i>Motyw</a></div>
 		</nav>
 	</header>
 	
-		<div id="me_block">
+	<div id="me_block">
 		<div class="content">
 			<h2>Czym się zajmuję ?</h2>
-			<p>Projektowanie i tworzenie stron internetowych.</p>
+			<p>Projektowanie i tworzenie stron internetowych, takich jak ta.</p>
 			<button class="scroll-button" onclick="display_me_content()">
 				<i class="demo-icon icon-right-open"></i>
 			</button>
 			<a class="scroll-button" href="#projects">
 				<i class="demo-icon icon-down-open"></i>
 			</a>
-			
-			</div>
-			<div class="ball4">
-			</div>
-			<div class="ball1">
-			</div>
-			<div class="ball2">
-			</div>
-			<div class="ball3">
-			</div>
 		</div>
+		
+		<div class="ball4">
+		</div>
+		<div class="ball1">
+		</div>
+		<div class="ball2">
+		</div>
+		<div class="ball3">
+		</div>
+			
+	</div>
 	
 	<div class="blank-div" id="projects">
 	</div>
